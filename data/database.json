@@ -1,0 +1,112 @@
+{
+  "users": [
+    {
+      "id": "1752343016024g4kihjpx8",
+      "email": "patricksirma25@gmail.com",
+      "password": "$2a$10$HIALb7msEMWbSkarL7nYZOo8zLPXorIlz6X3jwNg6AKca9fGYLe0G",
+      "subscription": "free",
+      "usageToday": 2,
+      "lastUsageDate": "2025-07-14",
+      "createdAt": "2025-07-12T17:56:56.023Z"
+    },
+    {
+      "id": "17523911406238w8ko79wq",
+      "email": "patrickkoechy@gmail.com",
+      "password": "$2a$10$Ynr12RVQygQUS1pOxyKsLuJhlLwzOPXAWDOCNi4SEIr.jTDK7/fAm",
+      "subscription": "free",
+      "usageToday": 2,
+      "lastUsageDate": "2025-07-13",
+      "createdAt": "2025-07-13T07:19:00.623Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "1752347956508vwebs995z",
+      "userId": "1752343016024g4kihjpx8",
+      "rawInput": "Leon had sandwich, medication at 5pm",
+      "formattedOutput": "1. House-based information – \n2. Appointments – \n3. Visitors – No visitors today\n4. Client Information\n   a. Meals – Leon had a sandwich for dinner.\n   b. Medications – Leon took his medication at 5pm.\n   c. Behavior/Mood – \n   d. Activities – \n   e. Support provided –",
+      "template": "Default NDIS Note Format",
+      "createdAt": "2025-07-12T19:19:16.507Z",
+      "clientName": "Leon"
+    },
+    {
+      "id": "1752348092871nhqpbvh28",
+      "userId": "1752343016024g4kihjpx8",
+      "rawInput": "Leon had sandwich, medication at 5pm. he went to community support and come back at 5pm. he was taking a rest and joined other participants for dinner. he was chatting with staff. leon was watching tv after dinner. ew hoisted him to be",
+      "formattedOutput": "1. House-based information – \n   - No specific house-based information provided.\n\n2. Appointments – \n   - No appointments mentioned.\n\n3. Visitors – \n   - No visitors today.\n\n4. Client Information\n   a. Meals – \n      - Leon had a sandwich for dinner.\n   \n   b. Medications – \n      - Leon took his medication at 5pm.\n   \n   d. Activities – \n      - Leon went to community support and returned at 5pm.\n      - Leon rested and later joined other participants for dinner.\n      - After dinner, Leon watched TV.\n   \n   e. Support provided – \n      - Leon was hoisted by EW.\n\n",
+      "template": "Default NDIS Note Format",
+      "createdAt": "2025-07-12T19:21:32.870Z",
+      "clientName": "Leon"
+    },
+    {
+      "id": "17523664700172rn477902",
+      "userId": "1752343016024g4kihjpx8",
+      "rawInput": "cy6yvyyvv",
+      "formattedOutput": "I'm sorry, but the shift notes provided do not contain any relevant information that can be formatted into a professional NDIS structure. If you have any other shift notes or information that needs formatting, please feel free to provide it.",
+      "template": "Default NDIS Note Format",
+      "createdAt": "2025-07-13T00:27:50.016Z",
+      "clientName": "leo"
+    },
+    {
+      "id": "1752366519376wzk44bj3k",
+      "userId": "1752343016024g4kihjpx8",
+      "rawInput": "Leon had his meds at 5pm. leon went to community, cleaning done\n",
+      "formattedOutput": "1. House-based information – Cleaning completed.\n2. Appointments – No appointments today.\n3. Visitors – No visitors today.\n4. Client Information\n   b. Medications – Leon took his medication at 5pm.\n   d. Activities – Leon went to the community.\n   e. Support provided – Cleaning was completed.",
+      "template": "Default NDIS Note Format",
+      "createdAt": "2025-07-13T00:28:39.374Z",
+      "clientName": "Leon"
+    },
+    {
+      "id": "1752391301524yxtvm0p20",
+      "userId": "17523911406238w8ko79wq",
+      "rawInput": "he was chatting with staff and with positive interaction. he went to community visit at 10am. he had a cup of tea before going to community.He had lunctime medication at 10. he was still in the comunity at 1pm. he looked jovial.laundry done, house cleanind done. novisitor, signing of medication done",
+      "formattedOutput": "1. House-based information\n   - Laundry and house cleaning completed.\n\n2. Appointments\n   - No appointments scheduled.\n\n3. Visitors\n   - No visitors today.\n\n4. Client Information\n   a. Meals\n      - No meal information provided.\n   \n   b. Medications\n      - Leon took lunchtime medication at 10 AM.\n      - Medication signing completed.\n\n   c. Behavior/Mood\n      - Leon appeared jovial during the day.\n\n   d. Activities\n      - Leon went on a community visit at 10 AM and was still in the community at 1 PM.\n\n   e. Support provided\n      - Leon engaged in positive interactions with staff.\n      - Leon had a cup of tea before going to the community.",
+      "template": "Default NDIS Note Format",
+      "createdAt": "2025-07-13T07:21:41.522Z",
+      "clientName": "Leon"
+    },
+    {
+      "id": "1752391545174mvdnx73pb",
+      "userId": "17523911406238w8ko79wq",
+      "rawInput": "he was chatting with staff and with positive interaction. he went to community visit at 10am. he had a cup of tea before going to community.He had lunctime medication at 10. he was still in the comunity at 1pm. he looked jovial.laundry done, house cleanind done. novisitor, signing of medication done.no appointments, he had sandwich for lunch",
+      "formattedOutput": "1. House-based information\n   - Laundry and house cleaning completed.\n\n2. Appointments\n   - No appointments scheduled.\n\n3. Visitors\n   - No visitors today.\n\n4. Client Information\n   a. Meals\n      - Sandwich served for lunch.\n\n   b. Medications\n      - Lunchtime medication administered at 10 AM.\n      - Signing of medication completed.\n\n   c. Behavior/Mood\n      - Leon appeared jovial during the day.\n\n   d. Activities\n      - Leon engaged in a community visit at 10 AM.\n      - Leon remained in the community until 1 PM.\n\n   e. Support provided\n      - Leon engaged in positive interactions with staff.\n      - Leon had a cup of tea before the community visit.",
+      "template": "Default NDIS Note Format",
+      "createdAt": "2025-07-13T07:25:45.173Z",
+      "clientName": "Leon"
+    },
+    {
+      "id": "17524518411346g389fg5a",
+      "userId": "1752343016024g4kihjpx8",
+      "rawInput": "dvdcdc",
+      "formattedOutput": "I'm sorry, but the shift notes provided are incomplete and do not contain any relevant information to format. Could you please provide more detailed shift notes for me to work with?",
+      "template": "Default NDIS Note Format",
+      "createdAt": "2025-07-14T00:10:41.133Z",
+      "clientName": "ced"
+    },
+    {
+      "id": "17524518693987h57pbyrk",
+      "userId": "1752343016024g4kihjpx8",
+      "rawInput": "He slept well",
+      "formattedOutput": "1. House-based information – No specific house-based information.\n2. Appointments – No appointments scheduled.\n3. Visitors – No visitors today.\n4. Client Information\n   d. Activities – Leon slept well during the shift.",
+      "template": "Default NDIS Note Format",
+      "createdAt": "2025-07-14T00:11:09.398Z",
+      "clientName": "Leon"
+    }
+  ],
+  "templates": [
+    {
+      "id": "default-ndis",
+      "name": "Default NDIS Note Format",
+      "description": "Standard NDIS shift note format",
+      "prompt": "Transform the following raw shift notes into a professional NDIS format. Use this exact structure:\n\n1. House-based information – [Any household activities, cleaning, maintenance]\n2. Appointments – [Medical appointments, calls, referrals]\n3. Visitors – [Any visitors or specify \"No visitors today\"]\n4. Client Information\n   a. Meals – [Breakfast, lunch, dinner details]\n   b. Medications – [Medication compliance, refusals, PRN requests]\n   c. Behavior/Mood – [Participant's mood, behavior, incidents]\n   d. Activities – [Daily activities, social engagement, exercise]\n   e. Support provided – [Assistance given, prompts, guidance]\n\nKeep language professional, person-centered, and compliant with NDIS documentation standards. Only include sections that are relevant to the provided information.",
+      "isDefault": true
+    },
+    {
+      "id": "aged-care",
+      "name": "Aged Care Format",
+      "description": "Format for aged care shift notes",
+      "prompt": "Transform the following raw shift notes into a professional aged care format. Use this structure:\n\n**Personal Care:**\n- [Assistance with ADLs, hygiene, mobility]\n\n**Nutrition & Hydration:**\n- [Meals consumed, fluid intake, dietary needs]\n\n**Medication:**\n- [Medication administration, compliance, observations]\n\n**Health & Wellbeing:**\n- [Physical condition, mood, behavior, concerns]\n\n**Activities & Social:**\n- [Activities participated in, social interactions, engagement]\n\n**Communication:**\n- [Family contact, appointments, referrals]\n\n**Environment:**\n- [Room/facility maintenance, safety observations]\n\nUse respectful, professional language appropriate for aged care documentation. Focus on the person's dignity and individual needs.",
+      "isDefault": false
+    }
+  ]
+}
