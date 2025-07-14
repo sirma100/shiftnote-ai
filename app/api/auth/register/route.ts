@@ -45,6 +45,12 @@ export async function POST(request: NextRequest) {
     return response;
   } catch (error) {
     console.error('Registration error:', error);
+    console.error('Error details:', {
+      message: error instanceof Error ? error.message : 'Unknown error',
+      stack: error instanceof Error ? error.stack : undefined,
+      jwtSecret: process.env.JWT_SECRET ? 'SET' : 'NOT SET',
+      nodeEnv: process.env.NODE_ENV
+    });
     return NextResponse.json(
       { success: false, error: 'Internal server error' },
       { status: 500 }
