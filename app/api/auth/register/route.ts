@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { hashPassword, generateToken } from '@/lib/auth';
-import { userDb } from '@/lib/database-cloud';
+import { userDb } from '@/lib/database-supabase';
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const existingUser = userDb.findByEmail(email);
+    const existingUser = await userDb.findByEmail(email);
 
     if (existingUser) {
       return NextResponse.json(
@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     }
 
     const hashedPassword = await hashPassword(password);
-    const user = userDb.create({
+    const user = await userDb.create({
       email,
       password: hashedPassword,
       subscription: 'free',

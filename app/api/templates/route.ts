@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { templateDb } from '@/lib/database-cloud';
+import { templateDb } from '@/lib/database-supabase';
 
 export async function GET(request: NextRequest) {
   try {
-    const templates = templateDb.findAll();
+    const templates = await templateDb.findAll();
 
     return NextResponse.json({
       success: true,

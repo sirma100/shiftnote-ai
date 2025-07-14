@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { comparePassword, generateToken } from '@/lib/auth';
-import { userDb } from '@/lib/database-cloud';
+import { userDb } from '@/lib/database-supabase';
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const user = userDb.findByEmail(email);
+    const user = await userDb.findByEmail(email);
 
     if (!user) {
       return NextResponse.json(

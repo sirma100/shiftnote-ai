@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { constructEvent } from '@/lib/stripe';
-import { userDb } from '@/lib/database-cloud';
+import { userDb } from '@/lib/database-supabase';
 
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
 
         if (userId) {
           // Update user subscription status
-          userDb.updateSubscription(userId, 'pro');
+          await userDb.updateSubscription(userId, 'pro');
           console.log(`Updated user ${userId} to pro subscription`);
         }
         break;
@@ -35,11 +35,11 @@ export async function POST(request: NextRequest) {
           : subscription.customer.id;
         
         // Find user by customer ID
-        const user = userDb.findByCustomerId(customerId);
+        const user = await userDb.findByCustomerId(customerId);
         
         if (user) {
           const status = subscription.status === 'active' ? 'pro' : 'free';
-          userDb.updateSubscription(user.id, status);
+          await userDb.updateSubscription(user.id, status);
           console.log(`Updated user ${user.id} subscription to ${status}`);
         }
         break;
@@ -50,10 +50,10 @@ export async function POST(request: NextRequest) {
           ? canceledSubscription.customer
           : canceledSubscription.customer.id;
         
-        const canceledUser = userDb.findByCustomerId(canceledCustomerId);
+        const canceledUser = await userDb.findByCustomerId(canceledCustomerId);
         
         if (canceledUser) {
-          userDb.updateSubscription(canceledUser.id, 'free');
+          await userDb.updateSubscription(canceledUser.id, 'free');
           console.log(`Downgraded user ${canceledUser.id} to free subscription`);
         }
         break;

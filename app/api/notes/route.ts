@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
-import { userDb, noteDb } from '@/lib/database-cloud';
+import { userDb, noteDb } from '@/lib/database-supabase';
 
 export const runtime = 'nodejs';
 
@@ -24,7 +24,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const user = userDb.findById(decoded.id);
+    const user = await userDb.findById(decoded.id);
 
     if (!user) {
       return NextResponse.json(
@@ -33,7 +33,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const notes = noteDb.findByUserId(user.id);
+    const notes = await noteDb.findByUserId(user.id);
 
     return NextResponse.json({
       success: true,

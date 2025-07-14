@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
-import { userDb } from '@/lib/database-cloud';
+import { userDb } from '@/lib/database-supabase';
 import { createCheckoutSession } from '@/lib/stripe';
 
 export async function POST(request: NextRequest) {
@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const user = userDb.findById(decoded.id);
+    const user = await userDb.findById(decoded.id);
 
     if (!user) {
       return NextResponse.json(
