@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { templateDb } from '@/lib/database';
+import { templateDb } from '@/lib/database-cloud';
 
 export async function GET(request: NextRequest) {
   try {

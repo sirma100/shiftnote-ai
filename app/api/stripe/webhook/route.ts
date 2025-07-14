@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { constructEvent } from '@/lib/stripe';
-import { userDb } from '@/lib/database';
+import { userDb } from '@/lib/database-cloud';
 
 export async function POST(request: NextRequest) {
   const body = await request.text();

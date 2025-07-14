@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
-import { userDb, noteDb, templateDb } from '@/lib/database';
+import { userDb, noteDb, templateDb } from '@/lib/database-cloud';
 import { formatShiftNote } from '@/lib/openai';
 
 export async function POST(request: NextRequest) {

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
-import { noteDb, userDb } from '@/lib/database';
+import { userDb, noteDb } from '@/lib/database-cloud';
 
 export const runtime = 'nodejs';
 

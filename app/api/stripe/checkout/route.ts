@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyToken } from '@/lib/auth';
-import { userDb } from '@/lib/database';
+import { userDb } from '@/lib/database-cloud';
 import { createCheckoutSession } from '@/lib/stripe';
 
 export async function POST(request: NextRequest) {
